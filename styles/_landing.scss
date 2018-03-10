@@ -1,0 +1,21 @@
+.jumbo {
+  background-color: $PRIMARY_DARK;
+  display: flex;
+  max-height: 500px;
+  min-height: 45vw;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  & > * {
+    z-index: 10;
+  }
+
+  img.bam {
+    height: 110%;
+    position: absolute;
+    right: -60px;
+    z-index: 5;
+    bottom: -15px;
+  }
+}

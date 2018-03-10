@@ -1,0 +1,41 @@
+// Constants
+$PRIMARY_DARK: #36003F;
+$PRIMARY_COLOR: #79018D;
+$PRIMARY_MEDIUM: #A87FAF;
+$PRIMARY_LIGHT: #D5BBDB;
+$PRIMARY_PALE: #EFE5F1;
+
+$GRAY_DARK: #6F6974;
+$GRAY_MEDIUM: #95989A;
+$GRAY_LIGHT: #D9DDE0;
+
+$YELLOW_HIGHLIGHT: #EAE6DA;
+$PURPLE_HIGHLIGHT: #CFC8E2;
+
+
+@import "landing";
+
+body {
+  margin: 0;
+  font-family: "Lato", "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  padding-bottom: 35px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0;
+}
+
+
+.footer {
+  text-align: center;
+  padding: 5px;
+  border-top: $GRAY_LIGHT 1px solid;
+  font-family: "Minion-pro", serif;
+  font-style: italic;
+  font-size: 0.75em;
+  color: $GRAY_LIGHT;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
