@@ -13,7 +13,7 @@ const Jumbo = () => (
         <Link to="/projects">Explore my work</Link>
       </div>
     </div>
-    <img src="/dist/assets/bam_image.png" alt="" className="bam"/>
+    <img src="/dist/assets/images/bam_image.png" alt="" className="bam"/>
   </div>
 )
 
