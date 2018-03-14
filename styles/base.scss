@@ -9,7 +9,9 @@ $GRAY_DARK: #6F6974;
 $GRAY_MEDIUM: #95989A;
 $GRAY_LIGHT: #D9DDE0;
 
-$YELLOW_HIGHLIGHT: #EAE6DA;
+$WHITE_GOLD: #EAE6DA;
+
+$YELLOW_HIGHLIGHT: $WHITE_GOLD;
 $PURPLE_HIGHLIGHT: #CFC8E2;
 
 
@@ -23,11 +25,21 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 10px 0;
+  margin: 0 0 10px 0;
+  font-family: "Mrs Eaves OT", "Georgia", serif;
+  font-weight: 100;
+}
+
+h5 {
+  font-weight: 100;
+  font-family: "Minion Pro", "TimesNewRoman", serif;
+  font-style: italic;
+  font-size: 0.75em;
 }
 
 
 .footer {
+  background-color: white;
   text-align: center;
   padding: 5px;
   border-top: $GRAY_LIGHT 1px solid;
@@ -35,7 +47,8 @@ h1, h2, h3, h4, h5, h6 {
   font-style: italic;
   font-size: 0.75em;
   color: $GRAY_LIGHT;
-  position: absolute;
+  position: fixed;
   width: 100%;
   bottom: 0;
+  z-index: 100;
 }

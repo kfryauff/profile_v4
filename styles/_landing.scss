@@ -1,21 +1,38 @@
 .jumbo {
   background-color: $PRIMARY_DARK;
   display: flex;
+  min-height: 350px;
   max-height: 500px;
-  min-height: 45vw;
+  height: 45vw;
   align-items: center;
   position: relative;
   overflow: hidden;
+  padding: 0 0 0 45px;
+  color: $WHITE_GOLD;
 
   & > * {
     z-index: 10;
   }
 
+  h1 {
+    margin: 0;
+  }
+
   img.bam {
     height: 110%;
     position: absolute;
-    right: -60px;
+    right: -10%;
     z-index: 5;
     bottom: -15px;
+  }
+
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+
+    img.icon {
+      width: 45px;
+    }
   }
 }

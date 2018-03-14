@@ -1,6 +1,6 @@
 export default {
   name: 'K. Fryauff',
-  tag: 'Developer | Designer',
+  tag: 'Discover . Design . Develop . Deploy',
   email: 'email@address.com',
   phone: '000-000-0000',
   address: '123 Address, City, State',

@@ -1,14 +1,24 @@
+import _ from 'lodash'
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
 
-const Jumbo = () => (
+function renderSocialMediaIcon(media) {
+  return (
+    <a href={media.link} target={media.target}>
+      <img src={`../../../dist/${media.image}`} className="icon" />
+    </a>
+  )
+}
+
+const Jumbo = ({ profile }) => (
   <div className="jumbo">
-    <div>
-      Social
+    <div className="social-media">
+      {_.values(profile.socialMedia).map(m => renderSocialMediaIcon(m))}
     </div>
     <div>
-      <h1>K. Fryauff</h1>
-      <h5>Discover . Design . Develop . Deploy</h5>
+      <h1>{profile.name}</h1>
+      <h5>{profile.tag}</h5>
       <div>
         <Link to="/projects">Explore my work</Link>
       </div>
@@ -17,4 +27,8 @@ const Jumbo = () => (
   </div>
 )
 
-export default Jumbo
+function mapStateToProps(state) {
+  return { profile: state.profile }
+}
+
+export default connect(mapStateToProps)(Jumbo)
