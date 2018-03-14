@@ -3,10 +3,19 @@
   border-bottom: 1px solid $GRAY_LIGHT;
   display: flex;
   flex: 1;
-  justify-content: center;
-  padding: 10px 15px;
+  justify-content: space-around;
+  padding: 0 15px;
+  position: sticky;
+  top: 0;
 
-  & > * {
-    flex-grow: 1;
+  & > a {
+    text-decoration: none;
+    font-size: 1.25em;
+    flex-grow: 0;
+    padding: 10px 10px 5px;
+  }
+
+  .active {
+    border-bottom: 2px solid $PRIMARY_COLOR;
   }
 }

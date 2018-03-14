@@ -32,7 +32,7 @@ const Banner = ({ profile }) => (
         <h5 className="profile-detail">{profile.email}</h5>
         <h5 className="profile-detail">{profile.location}</h5>
       </address>
-      <Link to="/projects" class="btn">Explore my work</Link>
+      <Link to="/projects" className="btn">Explore my work</Link>
     </div>
     <img src="/dist/assets/images/bam_bg.png" alt="" className="background"/>
     <img src="/dist/assets/images/bam_image.png" alt="" className="bam"/>
