@@ -2,11 +2,21 @@ import _ from 'lodash'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
+import ReactTooltip from 'react-tooltip'
 
-function renderSocialMediaIcon(media) {
+function renderSocialMediaIcon(media, key) {
   return (
     <a href={media.link} target={media.target}>
-      <img src={`../../../dist/${media.image}`} className="icon" />
+      <img src={`../../../dist/${media.image}`} className="icon" data-for={key} data-tip />
+      <ReactTooltip
+        id={key}
+        className="tooltip"
+        place="right"
+        type="dark"
+        effect="solid"
+      >
+        {media.label}
+      </ReactTooltip>
     </a>
   )
 }
@@ -14,7 +24,7 @@ function renderSocialMediaIcon(media) {
 const Jumbo = ({ profile }) => (
   <div className="jumbo">
     <div className="social-media">
-      {_.values(profile.socialMedia).map(m => renderSocialMediaIcon(m))}
+      {_.keys(profile.socialMedia).map(key => renderSocialMediaIcon(profile.socialMedia[key], key))}
     </div>
     <div>
       <h1>{profile.name}</h1>
