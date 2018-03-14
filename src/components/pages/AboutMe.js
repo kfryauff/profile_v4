@@ -1,9 +1,15 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
-const AboutMe = () => (
+const AboutMe = ({ profile }) => (
   <div className="about-me">
-    About Me
+    <h1>{profile.name}</h1>
+
   </div>
 )
 
-export default AboutMe
+function mapStateToProps(state) {
+  return { profile: state.profile }
+}
+
+export default connect(mapStateToProps)(AboutMe)

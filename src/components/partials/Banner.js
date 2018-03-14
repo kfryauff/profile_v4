@@ -2,29 +2,15 @@ import _ from 'lodash'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
-import ReactTooltip from 'react-tooltip'
 
-function renderSocialMediaIcon(media, key) {
-  return (
-    <a href={media.link} target={media.target}>
-      <img src={`../../../dist/${media.image}`} className="icon" data-for={key} data-tip />
-      <ReactTooltip
-        id={key}
-        className="tooltip"
-        place="right"
-        type="dark"
-        effect="solid"
-      >
-        {media.label}
-      </ReactTooltip>
-    </a>
-  )
-}
+import SocialMediaIcon from './SocialMediaIcon'
+
 
 const Banner = ({ profile }) => (
   <div className="banner">
     <div className="social-media">
-      {_.keys(profile.socialMedia).map(key => renderSocialMediaIcon(profile.socialMedia[key], key))}
+      {_.keys(profile.socialMedia).map(label =>
+        <SocialMediaIcon media={profile.socialMedia[label]} label={label} key={label} />)}
     </div>
     <div>
       <h1>{profile.name}</h1>
