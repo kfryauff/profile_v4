@@ -16,41 +16,38 @@ $PURPLE_HIGHLIGHT: #CFC8E2;
 
 $BORDER_RADIUS: 5px;
 
-@import "buttons";
-
-@import "landing";
-
 body {
-  margin: 0;
   font-family: "Lato", "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
+  font-weight: 300;
+  margin: 0;
   padding-bottom: 35px;
 }
 
 h1, h3, h5 {
-  margin: 0 0 10px 0;
   font-family: "Mrs Eaves OT", "Georgia", serif;
   font-weight: 100;
+  margin: 0 0 10px 0;
 }
 
 h5 {
-  font-weight: 100;
   font-family: "Minion Pro", "TimesNewRoman", serif;
-  font-style: italic;
   font-size: 1em;
+  font-style: italic;
+  font-weight: 100;
 }
 
-.footer {
-  background-color: white;
+.section {
+  padding: 45px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 5px;
-  border-top: $GRAY_LIGHT 1px solid;
-  font-family: "Minion-pro", serif;
-  font-style: italic;
-  font-size: 0.75em;
-  color: $GRAY_LIGHT;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  z-index: 100;
 }
+
+@import "buttons";
+
+@import "landing";
+@import "main_navigation";
+
+@import "footer";

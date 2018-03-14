@@ -1,0 +1,14 @@
+.footer {
+  background-color: white;
+  border-top: $GRAY_LIGHT 1px solid;
+  bottom: 0;
+  color: $GRAY_LIGHT;
+  font-family: "Minion-pro", serif;
+  font-size: 0.75em;
+  font-style: italic;
+  padding: 5px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+}

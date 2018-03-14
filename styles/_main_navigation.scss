@@ -1,0 +1,12 @@
+.main-navigation {
+  align-items: center;
+  border-bottom: 1px solid $GRAY_LIGHT;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: 10px 15px;
+
+  & > * {
+    flex-grow: 1;
+  }
+}

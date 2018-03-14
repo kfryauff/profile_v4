@@ -1,22 +1,22 @@
 .banner {
-  background-color: $PRIMARY_DARK;
-  display: flex;
-  min-height: 350px;
-  max-height: 500px;
-  height: 45vw;
   align-items: center;
-  position: relative;
+  background-color: $PRIMARY_DARK;
+  color: $WHITE_GOLD;
+  display: flex;
+  height: 45vw;
+  max-height: 500px;
+  min-height: 350px;
   overflow: hidden;
   padding: 0 0 0 20px;
-  color: $WHITE_GOLD;
+  position: relative;
 
   & > * {
     z-index: 10;
   }
 
   h1 {
-    margin: 0;
     font-size: 3em;
+    margin: 0;
   }
 
   h5 {
@@ -24,21 +24,20 @@
   }
 
   img.background {
+    left: 0;
     min-height: 100%;
     min-width: 100%;
     position: absolute;
-    left: 0;
     top: 0;
     z-index: 0;
   }
 
   img.bam {
-    height: 105%;
-    position: absolute;
-    left: 35%;
-    z-index: 5;
     bottom: -7%;
-    // min-height: 50vw;
+    height: 105%;
+    left: 35%;
+    position: absolute;
+    z-index: 5;
   }
 
   .social-media {
@@ -48,9 +47,9 @@
     z-index: 15;
 
     img.icon {
-      width: 45px;
       border-radius: 45px;
       filter: grayscale(95%);
+      width: 45px;
     }
 
     img.icon:hover {
@@ -60,6 +59,6 @@
   }
 
   .profile-detail {
-    font-size: 0.75em;
+    font-size: 0.95em;
   }
 }
