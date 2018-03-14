@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import MainNavigation from './partials/MainNavigation'
 import Footer from './partials/Footer'
-import Jumbo from './partials/Jumbo'
+import Banner from './partials/Banner'
 import Landing from './pages/Landing'
 import AboutMe from './pages/AboutMe'
 import Projects from './pages/Projects'
@@ -11,7 +11,7 @@ import Projects from './pages/Projects'
 const App = () => (
   <BrowserRouter>
     <div>
-      <Route exact path="/" component={Jumbo} />
+      <Route exact path="/" component={Banner} />
       <MainNavigation />
       <Switch>
         <Route path="/about" component={AboutMe} />

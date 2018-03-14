@@ -21,18 +21,18 @@ function renderSocialMediaIcon(media, key) {
   )
 }
 
-const Jumbo = ({ profile }) => (
-  <div className="jumbo">
+const Banner = ({ profile }) => (
+  <div className="banner">
     <div className="social-media">
       {_.keys(profile.socialMedia).map(key => renderSocialMediaIcon(profile.socialMedia[key], key))}
     </div>
     <div>
       <h1>{profile.name}</h1>
-      <h5>{profile.tag}</h5>
-      <div>
-        <Link to="/projects">Explore my work</Link>
-      </div>
+      <h5 className="profile-detail">{profile.email}</h5>
+      <h5 className="profile-detail">{profile.location}</h5>
+      <Link to="/projects" class="btn">Explore my work</Link>
     </div>
+    <img src="/dist/assets/images/bam_bg.png" alt="" className="background"/>
     <img src="/dist/assets/images/bam_image.png" alt="" className="bam"/>
   </div>
 )
@@ -41,4 +41,4 @@ function mapStateToProps(state) {
   return { profile: state.profile }
 }
 
-export default connect(mapStateToProps)(Jumbo)
+export default connect(mapStateToProps)(Banner)

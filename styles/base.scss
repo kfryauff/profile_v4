@@ -14,6 +14,9 @@ $WHITE_GOLD: #EAE6DA;
 $YELLOW_HIGHLIGHT: $WHITE_GOLD;
 $PURPLE_HIGHLIGHT: #CFC8E2;
 
+$BORDER_RADIUS: 5px;
+
+@import "buttons";
 
 @import "landing";
 
@@ -34,7 +37,7 @@ h5 {
   font-weight: 100;
   font-family: "Minion Pro", "TimesNewRoman", serif;
   font-style: italic;
-  font-size: 0.75em;
+  font-size: 1em;
 }
 
 .footer {

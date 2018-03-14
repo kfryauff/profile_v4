@@ -1,4 +1,4 @@
-.jumbo {
+.banner {
   background-color: $PRIMARY_DARK;
   display: flex;
   min-height: 350px;
@@ -7,7 +7,7 @@
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding: 0 0 0 45px;
+  padding: 0 0 0 20px;
   color: $WHITE_GOLD;
 
   & > * {
@@ -19,18 +19,32 @@
     font-size: 3em;
   }
 
-  img.bam {
-    height: 110%;
+  h5 {
+    margin: 0;
+  }
+
+  img.background {
+    min-height: 100%;
+    min-width: 100%;
     position: absolute;
-    right: -10%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+  }
+
+  img.bam {
+    height: 105%;
+    position: absolute;
+    left: 35%;
     z-index: 5;
-    bottom: -15px;
+    bottom: -7%;
+    // min-height: 50vw;
   }
 
   .social-media {
     display: flex;
     flex-direction: column;
-    margin: 0 15px;
+    margin: 0 40px;
     z-index: 15;
 
     img.icon {
@@ -43,5 +57,9 @@
       filter: none;
       box-shadow: 0 0 1px 1px $YELLOW_HIGHLIGHT;
     }
+  }
+
+  .profile-detail {
+    font-size: 0.75em;
   }
 }
