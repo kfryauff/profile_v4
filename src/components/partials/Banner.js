@@ -28,8 +28,10 @@ const Banner = ({ profile }) => (
     </div>
     <div>
       <h1>{profile.name}</h1>
-      <h5 className="profile-detail">{profile.email}</h5>
-      <h5 className="profile-detail">{profile.location}</h5>
+      <address>
+        <h5 className="profile-detail">{profile.email}</h5>
+        <h5 className="profile-detail">{profile.location}</h5>
+      </address>
       <Link to="/projects" class="btn">Explore my work</Link>
     </div>
     <img src="/dist/assets/images/bam_bg.png" alt="" className="background"/>

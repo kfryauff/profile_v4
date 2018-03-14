@@ -2,7 +2,7 @@ export default {
   name: 'K. Fryauff',
   tag: 'Discover . Design . Develop . Deploy',
   email: 'krista.fryauff@gmail.com',
-  location: 'Bay Area, CA, USA',
+  location: 'SF Bay Area, CA, USA',
   image: 'http://lorempixel.com/100/100/animals/8/',
   socialMedia: {
     // email: {
