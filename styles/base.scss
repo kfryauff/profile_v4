@@ -40,14 +40,19 @@ h5 {
 .section {
   padding: 45px 30px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
+// common styling
 @import "buttons";
 
+// page styling
 @import "landing";
-@import "main_navigation";
+@import "about";
 
+// partials styling
+@import "main_navigation";
 @import "footer";

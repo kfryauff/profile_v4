@@ -1,0 +1,38 @@
+$MAX_FIGURE_WIDTH: 450px;
+$FIGURE_WIDTH: 32vw;
+
+.about-me {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: left;
+  padding: 45px 30px;
+
+  .profile-pic {
+    border-radius: $MAX_FIGURE_WIDTH;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: $FIGURE_WIDTH;
+    max-height: $MAX_FIGURE_WIDTH;
+    max-width: $MAX_FIGURE_WIDTH;
+    overflow: hidden;
+    width: $FIGURE_WIDTH;
+
+    img {
+      height: 100%;
+      min-height: 100%;
+      min-width: 100%;
+    }
+  }
+
+  article {
+    padding: 20px;
+    white-space: pre-wrap;
+    line-height: 1.75em;
+
+    h1 {
+      font-size: 2em;
+    }
+  }
+}

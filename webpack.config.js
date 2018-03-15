@@ -22,7 +22,7 @@ module.exports = {
         }
       },
       {
-        test: /\.scss$/,
+        test: /\.(scss|sass)$/,
         use: [{
           loader: "style-loader" // creates style nodes from JS strings
         }, {
@@ -33,6 +33,10 @@ module.exports = {
             includePaths: ["styles"]
           }
         }]
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [ 'file-loader' ]
       }
     ]
   },

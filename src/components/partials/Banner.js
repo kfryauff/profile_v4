@@ -20,8 +20,8 @@ const Banner = ({ profile }) => (
       </address>
       <Link to="/projects" className="btn">Explore my work</Link>
     </div>
-    <img src="/dist/assets/images/bam_bg.png" alt="" className="background"/>
-    <img src="/dist/assets/images/bam_image.png" alt="" className="bam"/>
+    <img src="/assets/images/bam_bg.png" alt="" className="background"/>
+    <img src="/assets/images/bam_image.png" alt="" className="bam"/>
   </div>
 )
 
