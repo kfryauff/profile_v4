@@ -1,20 +1,6 @@
 // Constants
-$PRIMARY_DARK: #36003F;
-$PRIMARY_COLOR: #79018D;
-$PRIMARY_MEDIUM: #A87FAF;
-$PRIMARY_LIGHT: #D5BBDB;
-$PRIMARY_PALE: #EFE5F1;
-
-$GRAY_DARK: #6F6974;
-$GRAY_MEDIUM: #95989A;
-$GRAY_LIGHT: #D9DDE0;
-
-$WHITE_GOLD: #EAE6DA;
-
-$YELLOW_HIGHLIGHT: $WHITE_GOLD;
-$PURPLE_HIGHLIGHT: #CFC8E2;
-
-$BORDER_RADIUS: 5px;
+@import "constants/colors";
+@import "constants/measurements";
 
 body {
   font-family: "Lato", "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -46,13 +32,13 @@ h5 {
   text-align: center;
 }
 
-// common styling
+// common styles
 @import "buttons";
 
-// page styling
+// page styles
 @import "landing";
 @import "about";
 
-// partials styling
+// partials styles
 @import "main_navigation";
 @import "footer";

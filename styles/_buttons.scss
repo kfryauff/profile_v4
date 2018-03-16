@@ -3,8 +3,11 @@
   border: 1px solid $WHITE_GOLD;
   color: $WHITE_GOLD;
   display: flex;
-  font-size: 0.85em;
+  font-size: 1.05em;
   margin: 10px 0;
-  padding: 5px 10px;
+  padding: 10px;
   text-decoration: none;
+  background-color: rgba(59, 29, 74, 0.35);
+  justify-content: center;
+  align-items: center;
 }

@@ -10,7 +10,7 @@ const SocialMediaIcon = ({ media, label }) => {
         id={label}
         className="tooltip"
         place="right"
-        type="dark"
+        type="light"
         effect="solid"
       >
         {media.label}
