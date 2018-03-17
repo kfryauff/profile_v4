@@ -1,6 +1,10 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
-const Landing = () => (
+import ProjectSummaryExpandedList from '../projects/ProjectSummaryExpandedList'
+
+
+const Landing = ({ featured }) => (
   <div className="landing">
     <article className="section">
       <p>Illum do ingeniis ad culpa te pariatur ea sunt possumus, ubi sint ingeniis
@@ -16,24 +20,15 @@ const Landing = () => (
 
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia mollitia, corporis nostrum sequi ab dolor laborum aliquam reiciendis iure. Quisquam ad officiis eveniet aperiam nam laboriosam labore corporis alias asperiores.</p>
     </article>
-    <div className="section">
-      <div className="project-summary">
-        <figure></figure>
-        <article>
-          Featured project 1
 
-        </article>
-      </div>
-    </div>
-    <div className="section">
-      <div className="project-summary">
-        <figure></figure>
-        <article>
-          Featured project 2
-        </article>
-      </div>
-    </div>
+    {featured.map(project => <ProjectSummaryExpandedList project={project} />)}
   </div>
 )
 
-export default Landing
+function mapStateToProps(state) {
+  return {
+    featured: state.projects.featured
+  }
+}
+
+export default connect(mapStateToProps)(Landing)

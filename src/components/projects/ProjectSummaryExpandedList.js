@@ -3,7 +3,10 @@ import React from 'react'
 const ProjectSummaryExpandedList = ({ project }) => {
   return (
     <div className="project-summary-expanded-list">
-      ProjectSummaryExpandedList
+      <figure></figure>
+      <article>
+        ProjectSummaryExpandedList
+      </article>
     </div>
   )
 }
